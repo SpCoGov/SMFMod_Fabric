@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "smf:block/machine_pulverizer_front",
+    "side": "smf:block/machine_side",
+    "top": "smf:block/machine_top",
+    "bottom": "smf:block/machine_bottom"
+  }
+}

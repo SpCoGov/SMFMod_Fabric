@@ -1,0 +1,21 @@
+{
+  "music_disc.smf.thatgirl": {  "sounds": [{ "name": "smf:music/thatgirl", "stream": true }]},
+  "music_disc.smf.smf_anthem": {  "sounds": [{ "name": "smf:music/smf_anthem", "stream": true }]},
+  "music_disc.smf.dango": {  "sounds": [{ "name": "smf:music/dango", "stream": true }]},
+  "music_disc.smf.girigiri": {  "sounds": [{ "name": "smf:music/girigiri", "stream": true }]},
+  "music_disc.smf.babaroque": {  "sounds": [{ "name": "smf:music/babaroque", "stream": true }]},
+  "music_disc.smf.thesetup": {  "sounds": [{ "name": "smf:music/thesetup", "stream": true }]},
+  "music_disc.smf.diamond": {  "sounds": [{ "name": "smf:music/diamond", "stream": true }]},
+  "music_disc.smf.sb": {  "sounds": [{ "name": "smf:music/sb", "stream": true }]},
+  "music_disc.smf.ld": {  "sounds": [{ "name": "smf:music/ld", "stream": true }]},
+  "music_disc.smf.ddd": {  "sounds": [{ "name": "smf:music/ddd", "stream": true }]},
+  "music_disc.smf.sleepwalking": {  "sounds": [{ "name": "smf:music/sleepwalking", "stream": true }]},
+  "music_disc.smf.arcahv": {  "sounds": [{ "name": "smf:music/arcahv", "stream": true }]},
+  "music_disc.smf.wjbbb": {  "sounds": [{ "name": "smf:music/wjbbb", "stream": true }]},
+  "music_disc.smf.wdf1op": {  "sounds": [{ "name": "smf:music/wdf1op", "stream": true }]},
+  "music_disc.smf.wdf2op": {  "sounds": [{ "name": "smf:music/wdf2op", "stream": true }]},
+
+  "block.smf.wacao": {  "sounds": [{ "name": "smf:block/wacao", "stream": true }]},
+
+  "misc.smf.lightning_haimian": {  "sounds": [{ "name": "smf:misc/lightning_haimian", "stream": true }]}
+}

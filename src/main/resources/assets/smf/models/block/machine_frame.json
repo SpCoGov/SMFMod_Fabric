@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "smf:block/machine_frame_bottom",
+    "side": "smf:block/machine_frame_side",
+    "top": "smf:block/machine_frame_top",
+    "inner": "smf:block/machine_frame_inner"
+  }
+}

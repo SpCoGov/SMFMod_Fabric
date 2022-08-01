@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "smf:block/shengsheng_meat_stage2"
+  }
+}
