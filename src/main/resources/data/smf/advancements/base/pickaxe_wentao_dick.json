@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:wentao_dick_pickaxe"
+    },
+    "title": "快的太吓人",
+    "description": "合成一个文涛镐",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:base/wentao_dick",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:wentao_dick_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

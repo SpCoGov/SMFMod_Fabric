@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "W W",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "smf:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "smf:tin_gear",
+    "count": 1
+  }
+}

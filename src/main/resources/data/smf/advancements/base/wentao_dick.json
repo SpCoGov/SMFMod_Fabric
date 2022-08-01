@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:wentao_dick"
+    },
+    "title": "非对称加密？",
+    "description": "用远古的密钥解密文涛丁",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:base/encrypted_wentao_dick",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:wentao_dick"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

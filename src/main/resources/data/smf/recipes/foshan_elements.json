@@ -1,0 +1,14 @@
+{
+  "type": "smf:item_injector",
+  "ingredients": [
+    {
+      "item": "smf:wentao_dick"
+    },
+    {
+      "item": "smf:advanced_elements"
+    }
+  ],
+  "output": {
+    "item": "smf:foshan_elements"
+  }
+}

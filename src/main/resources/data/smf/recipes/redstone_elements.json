@@ -1,0 +1,14 @@
+{
+  "type": "smf:item_injector",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "smf:basic_elements"
+    }
+  ],
+  "output": {
+    "item": "smf:redstone_elements"
+  }
+}

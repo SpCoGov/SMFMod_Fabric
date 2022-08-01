@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "smf:dmy_block"
+  },
+  "result": "smf:advanced_elements",
+  "experience": 0.2,
+  "cookingtime": 50
+}

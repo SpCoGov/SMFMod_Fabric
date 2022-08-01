@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:basic_elements"
+    },
+    "title": "便宜要素就嗯造",
+    "description": "分解高级要素",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:in_ma/advanced_elements",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:basic_elements"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

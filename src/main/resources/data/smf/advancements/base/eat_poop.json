@@ -1,0 +1,35 @@
+{
+  "parent": "smf:base/smf_start",
+  "criteria": {
+    "poop": {
+      "conditions": {
+        "item": {
+          "items": [
+            "smf:poop"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "吃下一个大便"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "smf:poop"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "中午吃播"
+    }
+  },
+  "requirements": [
+    [
+      "poop"
+    ]
+  ]
+}

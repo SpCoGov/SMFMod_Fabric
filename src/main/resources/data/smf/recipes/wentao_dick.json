@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WRW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "smf:encrypted_wentao_dick"
+    },
+    "R": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "smf:wentao_dick",
+    "count": 1
+  }
+}
+

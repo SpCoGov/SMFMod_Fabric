@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "W W",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "item": "smf:wentao_dick"
+    }
+  },
+  "result": {
+    "item": "smf:wentao_helmet",
+    "count": 1
+  }
+}

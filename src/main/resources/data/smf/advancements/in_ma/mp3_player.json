@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:mp3_player"
+    },
+    "title": "Dolby Atmos",
+    "description": "杜比全景声现已入驻海绵山",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:in_ma/redstone_elements",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:mp3_player"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

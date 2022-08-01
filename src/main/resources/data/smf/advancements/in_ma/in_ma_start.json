@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:dmy_block"
+    },
+    "title": "工业&魔法",
+    "description": "海绵山专属的工业和魔法",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "smf:textures/block/machine_top.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:dmy_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

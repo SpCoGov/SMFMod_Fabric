@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EWE",
+    "WRW",
+    "EWE"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "smf:tin_gear"
+    },
+    "E": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "smf:machine_frame",
+    "count": 1
+  }
+}
+

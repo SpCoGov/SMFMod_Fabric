@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "ARA",
+    "ECE"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:hopper"
+    },
+    "R": {
+      "item": "smf:machine_frame"
+    },
+    "E": {
+      "item": "smf:copper_gear"
+    },
+    "C": {
+      "item": "smf:rf_coil"
+    },
+    "A": {
+      "item": "smf:tin_block"
+    }
+  },
+  "result": {
+    "item": "smf:item_injector",
+    "count": 1
+  }
+}
+

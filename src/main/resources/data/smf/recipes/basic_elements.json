@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "smf:advanced_elements"
+    }
+  ],
+  "result": {
+    "item": "smf:basic_elements",
+    "count": 32
+  }
+}
+

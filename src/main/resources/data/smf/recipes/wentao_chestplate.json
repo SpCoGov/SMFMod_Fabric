@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W W",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "smf:wentao_dick"
+    }
+  },
+  "result": {
+    "item": "smf:wentao_chestplate",
+    "count": 1
+  }
+}

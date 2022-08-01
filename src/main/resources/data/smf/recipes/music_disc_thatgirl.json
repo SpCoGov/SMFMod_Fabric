@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "RRR",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "smf:shengsheng_meat"
+    },
+    "R": {
+      "item": "smf:cooked_shengsheng_meat"
+    }
+  },
+  "result": {
+    "item": "smf:music_disc_thatgirl",
+    "count": 1
+  }
+}

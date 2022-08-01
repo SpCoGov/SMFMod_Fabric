@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "RWR",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "smf:smf_block"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "smf:encrypted_wentao_dick",
+    "count": 1
+  }
+}
+

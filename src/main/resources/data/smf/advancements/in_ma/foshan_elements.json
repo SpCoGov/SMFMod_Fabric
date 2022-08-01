@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:foshan_elements"
+    },
+    "title": "宇宙的中心：佛山",
+    "description": "将文涛丁注入到高级要素中",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:in_ma/advanced_elements",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:foshan_elements"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

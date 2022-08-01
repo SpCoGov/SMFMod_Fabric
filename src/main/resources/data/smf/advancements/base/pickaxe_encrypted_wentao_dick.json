@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:encrypted_wentao_dick_pickaxe"
+    },
+    "title": "快的吓人",
+    "description": "合成一个加密的文涛丁镐",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:base/encrypted_wentao_dick",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:encrypted_wentao_dick_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

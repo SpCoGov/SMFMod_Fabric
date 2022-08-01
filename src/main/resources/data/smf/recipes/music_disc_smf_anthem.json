@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "smf:smf_block"
+    }
+  },
+  "result": {
+    "item": "smf:music_disc_smf_anthem",
+    "count": 1
+  }
+}

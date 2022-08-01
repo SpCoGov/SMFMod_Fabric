@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WRW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "smf:smf_block",
+    "count": 4
+  }
+}
+

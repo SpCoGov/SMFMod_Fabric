@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "smf:qiandaowater_still",
+    "smf:qiandaowater_flowing"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "smf:item_injector",
+    "smf:deepslate_tin_ore",
+    "smf:tin_ore",
+    "smf:tin_block",
+    "smf:dmy_block",
+    "smf:raw_tin_block"
+  ]
+}

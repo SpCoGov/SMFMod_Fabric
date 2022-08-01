@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:smf_block"
+    },
+    "title": "海绵山",
+    "description": "海绵山的特色和构成",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "smf:textures/block/eucalyptus_planks.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:smf_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WRW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "smf:advanced_elements"
+    },
+    "R": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "minecraft:orange_shulker_box",
+    "count": 1
+  }
+}
+

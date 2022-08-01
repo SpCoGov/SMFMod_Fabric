@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:jukebox"
+    },
+    "title": "衣民娱乐",
+    "description": "制作一个唱片机",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:base/smf_start",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jukebox"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

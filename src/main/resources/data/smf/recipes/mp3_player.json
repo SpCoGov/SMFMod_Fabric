@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WSD",
+    "AQA",
+    "RER"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "R": {
+      "item": "minecraft:note_block"
+    },
+    "E": {
+      "item": "minecraft:repeater"
+    },
+    "Q": {
+      "item": "minecraft:redstone_block"
+    },
+    "A": {
+      "item": "minecraft:observer"
+    },
+    "S": {
+      "item": "minecraft:dispenser"
+    },
+    "D": {
+      "item": "smf:redstone_elements"
+    }
+  },
+  "result": {
+    "item": "smf:mp3_player",
+    "count": 1
+  }
+}

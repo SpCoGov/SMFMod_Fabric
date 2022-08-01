@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "W W",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "smf:copper_gear",
+    "count": 1
+  }
+}

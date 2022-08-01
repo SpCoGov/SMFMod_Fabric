@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:encrypted_wentao_dick"
+    },
+    "title": "密码学",
+    "description": "用海绵山方块制作加密的文涛丁",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:base/smf_start",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:encrypted_wentao_dick"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

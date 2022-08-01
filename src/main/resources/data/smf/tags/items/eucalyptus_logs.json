@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "smf:eucalyptus_log",
+    "smf:eucalyptus_wood",
+    "smf:stripped_eucalyptus_log",
+    "smf:stripped_eucalyptus_wood"
+  ]
+}

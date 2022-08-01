@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tin_ingot",
+  "key": {
+    "#": {
+      "item": "smf:tin_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "smf:tin_ingot"
+  }
+}

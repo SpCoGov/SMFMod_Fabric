@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "smf:advanced_elements"
+    },
+    "title": "这个也好烧",
+    "description": "烧炼丁名源方块获得高级要素",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "smf:in_ma/in_ma_start",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smf:advanced_elements"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
