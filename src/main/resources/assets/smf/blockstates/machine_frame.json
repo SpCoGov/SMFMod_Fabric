@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "smf:block/machine_frame"
+    }
+  }
+}

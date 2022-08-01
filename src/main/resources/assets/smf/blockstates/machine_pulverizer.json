@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "smf:block/machine_pulverizer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "smf:block/machine_pulverizer"
+    },
+    "facing=south": {
+      "model": "smf:block/machine_pulverizer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "smf:block/machine_pulverizer",
+      "y": 270
+    }
+  }
+}

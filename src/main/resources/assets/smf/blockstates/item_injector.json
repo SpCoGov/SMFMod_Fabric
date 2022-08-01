@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "smf:block/item_injector",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "smf:block/item_injector"
+    },
+    "facing=south": {
+      "model": "smf:block/item_injector",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "smf:block/item_injector",
+      "y": 270
+    }
+  }
+}

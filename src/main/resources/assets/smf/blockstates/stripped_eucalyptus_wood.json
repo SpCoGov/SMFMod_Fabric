@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "smf:block/stripped_eucalyptus_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "smf:block/stripped_eucalyptus_wood"
+    },
+    "axis=z": {
+      "model": "smf:block/stripped_eucalyptus_wood",
+      "x": 90
+    }
+  }
+}

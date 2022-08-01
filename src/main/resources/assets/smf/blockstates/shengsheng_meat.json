@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "smf:block/shengsheng_meat_stage0"
+    },
+    "age=1": {
+      "model": "smf:block/shengsheng_meat_stage1"
+    },
+    "age=2": {
+      "model": "smf:block/shengsheng_meat_stage2"
+    },
+    "age=3": {
+      "model": "smf:block/shengsheng_meat_stage3"
+    }
+  }
+}
