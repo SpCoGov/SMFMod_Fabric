@@ -77,7 +77,7 @@ public class SpCoItems {
             statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100, 2), 1.0f).
             statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 2), 1.0f).
             statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 2), 1.0f).
-            statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 499, 2), 1.0f).
+            statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 500, 2), 1.0f).
             statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 50, 4), 1.0f).
             meat().build()));
 
