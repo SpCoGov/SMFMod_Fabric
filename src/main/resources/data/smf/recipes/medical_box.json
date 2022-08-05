@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AWA",
+    "SDS",
+    "AWA"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:redstone_block"
+    },
+    "A": {
+      "item": "smf:basic_elements"
+    },
+    "S": {
+      "item": "smf:advanced_elements"
+    },
+    "D": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "smf:medical_box",
+    "count": 1
+  }
+}

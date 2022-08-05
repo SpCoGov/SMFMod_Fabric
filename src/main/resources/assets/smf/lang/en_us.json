@@ -63,12 +63,13 @@
   "item.smf.wentao_leggings": "文涛护腿",
   "item.smf.wentao_boots": "文涛靴子",
   "item.smf.poop": "大便",
-
+  "item.smf.shield_batt": "护盾电池",
+  "item.smf.medical_box": "医疗箱",
+  "item.smf.phoenix_kit": "凤凰治疗包",
   "item.smf.shengsheng_meat.dont_eat": "看起来很恶心.",
   "item.smf.mp3_player.songs_list.smf": "当前歌单 - 佛乐队",
   "item.smf.mp3_player.playing_info": "正在播放: ",
   "item.smf.mp3_player.shift_tip": "§e按下Shift以查看歌单信息.",
-
   "block.smf.smf_block": "海绵山方块",
   "block.smf.dmy_block": "丁名源方块",
   "block.smf.shengsheng_meat": "笙笙肉作物",

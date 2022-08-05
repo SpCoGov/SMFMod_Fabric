@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WSW",
+    "WDW",
+    "AWA"
+  ],
+  "key": {
+    "S": {
+      "item": "smf:shield_batt"
+    },
+    "W": {
+      "item": "smf:basic_elements"
+    },
+    "A": {
+      "item": "smf:advanced_elements"
+    },
+    "D": {
+      "item": "smf:medical_box"
+    }
+  },
+  "result": {
+    "item": "smf:phoenix_kit",
+    "count": 1
+  }
+}

@@ -48,5 +48,6 @@ public class SpCoClient implements ClientModInitializer {
                 VeinMiningNetwork.sendState(enabled);
             }
         });
+
     }
 }

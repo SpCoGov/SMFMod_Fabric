@@ -54,97 +54,96 @@ public class MP3PlayerItem extends Item {
             int i = Random.createLocal().nextInt(15);
             String musicPath;
             switch (i) {
-                case 0:
+                case 0 -> {
                     musicPath = "item.smf.music_disc_thatgirl.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_THATGIRL, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 3500);
-                    break;
-                case 1:
+                }
+                case 1 -> {
                     musicPath = "item.smf.music_disc_dango.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_DANGO, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5460);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     musicPath = "item.smf.music_disc_smf_anthem.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_SMF_ANTHEM, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5040);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     musicPath = "item.smf.music_disc_arcahv.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_ARCAHV, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 3320);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     musicPath = "item.smf.music_disc_babaroque.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_BABAROQUE, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5470);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     musicPath = "item.smf.music_disc_ddd.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_DDD, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5080);
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     musicPath = "item.smf.music_disc_diamond.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_DIAMOND, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4140);
-                    break;
-                case 7:
+                }
+                case 7 -> {
                     musicPath = "item.smf.music_disc_girigiri.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_GIRIGIRI, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5160);
-                    break;
-                case 8:
+                }
+                case 8 -> {
                     musicPath = "item.smf.music_disc_ld.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_LD, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 5220);
-                    break;
-                case 9:
+                }
+                case 9 -> {
                     musicPath = "item.smf.music_disc_sb.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_SB, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4400);
-                    break;
-                case 10:
+                }
+                case 10 -> {
                     musicPath = "item.smf.music_disc_sleepwalking.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_SLEEPWALKING, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4360);
-                    break;
-                case 11:
+                }
+                case 11 -> {
                     musicPath = "item.smf.music_disc_thesetup.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_THESETUP, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4860);
-                    break;
-                case 12:
+                }
+                case 12 -> {
                     musicPath = "item.smf.music_disc_wjbbb.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_WJBBB, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 3080);
-                    break;
-                case 13:
+                }
+                case 13 -> {
                     musicPath = "item.smf.music_disc_wdf2op.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_WDF2OP, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4860);
-                    break;
-                case 14:
+                }
+                case 14 -> {
                     musicPath = "item.smf.music_disc_wdf1op.desc";
                     user.sendMessage(Text.translatable("item.smf.mp3_player.playing_info").append(Text.translatable(musicPath)));
                     user.playSound(SpCoSounds.MUSIC_DISC_WDF1OP, SoundCategory.MUSIC, 1F, 1F);
                     user.getItemCooldownManager().set(this, 4440);
-                    break;
-
+                }
             }
         }
         return super.use(world, user, hand);

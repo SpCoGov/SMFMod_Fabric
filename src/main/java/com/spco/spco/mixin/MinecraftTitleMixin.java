@@ -17,10 +17,11 @@ public abstract class MinecraftTitleMixin {
 
     @Inject(at = @At("HEAD"), method = "getWindowTitle", cancellable = true)
     private void getWindowsTitle(CallbackInfoReturnable<String> cir) {
-        String titleBuilder = SpCo.MOD_NAME + " " +
-                SpCo.MOD_VERSION +
-                " | Based on " +
-                SpCo.MINECRAFT_VERSION;
+        String titleBuilder =
+                SpCo.MOD_NAME + " " +
+                        SpCo.MOD_VERSION +
+                        " | Based on " +
+                        SpCo.MINECRAFT_VERSION;
 
 
         cir.setReturnValue(titleBuilder);

@@ -49,9 +49,9 @@ public class SpCoItems {
 
     public static final ToolItem WENTAO_DICK_HOE = new CustomHoeItem(WentaoToolMaterial.INSTANCE, -2, 0.0F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
 
-    public static final MusicDiscItem DISC_THAT_GIRL = new CustomMusicDiscItem(11, SpCoSounds.MUSIC_DISC_THATGIRL, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC));
-    public static final MusicDiscItem DISC_SMF_ANTHEM = new CustomMusicDiscItem(4, SpCoSounds.MUSIC_DISC_SMF_ANTHEM, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC));
-    public static final MusicDiscItem DISC_DANGO = new CustomMusicDiscItem(5, SpCoSounds.MUSIC_DISC_DANGO, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC));
+    public static final MusicDiscItem DISC_THAT_GIRL = new CustomMusicDiscItem(11, SpCoSounds.MUSIC_DISC_THATGIRL, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 175);
+    public static final MusicDiscItem DISC_SMF_ANTHEM = new CustomMusicDiscItem(4, SpCoSounds.MUSIC_DISC_SMF_ANTHEM, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 252);
+    public static final MusicDiscItem DISC_DANGO = new CustomMusicDiscItem(5, SpCoSounds.MUSIC_DISC_DANGO, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 273);
     public static final Item DUST_PYROTHEUM = new Item(new Item.Settings().group(SMF_GROUP).rarity(Rarity.RARE));
     public static final Item MP3_PLAYER = new MP3PlayerItem(new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.RARE));
     public static final Item SHENGSHENG_MEAT_SEED = new AliasedBlockItem(SpCoBlocks.SHENGSHENG_MEAT_CROP, new FabricItemSettings().group(SMF_GROUP));
@@ -73,13 +73,17 @@ public class SpCoItems {
     public static final Item WENTAO_CHESTPLATE = new ArmorItem(SpCoArmorMaterials.WENTAO, EquipmentSlot.CHEST, new Item.Settings().group(SMF_GROUP_DEVELOPMENT).rarity(Rarity.UNCOMMON));
     public static final Item WENTAO_LEGGINGS = new ArmorItem(SpCoArmorMaterials.WENTAO, EquipmentSlot.LEGS, new Item.Settings().group(SMF_GROUP_DEVELOPMENT).rarity(Rarity.UNCOMMON));
     public static final Item WENTAO_BOOTS = new ArmorItem(SpCoArmorMaterials.WENTAO, EquipmentSlot.FEET, new Item.Settings().group(SMF_GROUP_DEVELOPMENT).rarity(Rarity.UNCOMMON));
-    public static final Item POOP = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder().hunger(0).saturationModifier(0.2f).
-            statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100, 2), 1.0f).
-            statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 2), 1.0f).
-            statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 2), 1.0f).
-            statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 500, 2), 1.0f).
-            statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 50, 4), 1.0f).
-            meat().build()));
+    public static final Item POOP = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder().hunger(0).saturationModifier(0.2f).statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 500, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 50, 4), 1.0f).meat().build()));
+    public static final Item SHIELD_BATT = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder().hunger(0)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2000, 4), 1.0F)
+            .build()).maxCount(6));
+    public static final Item MEDICAL_BOX = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder()
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 3), 1.0F)
+            .build()).maxCount(6));
+    public static final Item PHONEIX_KIT = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder()
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 3), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2000, 4), 1.0F)
+            .build()).maxCount(1));
 
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "mp3_player"), MP3_PLAYER);
@@ -123,23 +127,26 @@ public class SpCoItems {
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_leggings"), WENTAO_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_boots"), WENTAO_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "poop"), POOP);
+        Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "shield_batt"), SHIELD_BATT);
+        Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "medical_box"), MEDICAL_BOX);
+        Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "phoenix_kit"), PHONEIX_KIT);
 
-        discRegister("music_disc_arcahv", SpCoSounds.MUSIC_DISC_ARCAHV);
-        discRegister("music_disc_babaroque", SpCoSounds.MUSIC_DISC_BABAROQUE);
-        discRegister("music_disc_ddd", SpCoSounds.MUSIC_DISC_DDD);
-        discRegister("music_disc_diamond", SpCoSounds.MUSIC_DISC_DIAMOND);
-        discRegister("music_disc_girigiri", SpCoSounds.MUSIC_DISC_GIRIGIRI);
-        discRegister("music_disc_ld", SpCoSounds.MUSIC_DISC_LD);
-        discRegister("music_disc_sb", SpCoSounds.MUSIC_DISC_SB);
-        discRegister("music_disc_sleepwalking", SpCoSounds.MUSIC_DISC_SLEEPWALKING);
-        discRegister("music_disc_thesetup", SpCoSounds.MUSIC_DISC_THESETUP);
-        discRegister("music_disc_wjbbb", SpCoSounds.MUSIC_DISC_WJBBB);
-        discRegister("music_disc_wdf1op", SpCoSounds.MUSIC_DISC_WDF1OP);
-        discRegister("music_disc_wdf2op", SpCoSounds.MUSIC_DISC_WDF2OP);
+        discRegister("music_disc_arcahv", SpCoSounds.MUSIC_DISC_ARCAHV, 166);
+        discRegister("music_disc_babaroque", SpCoSounds.MUSIC_DISC_BABAROQUE, 287);
+        discRegister("music_disc_ddd", SpCoSounds.MUSIC_DISC_DDD, 254);
+        discRegister("music_disc_diamond", SpCoSounds.MUSIC_DISC_DIAMOND, 207);
+        discRegister("music_disc_girigiri", SpCoSounds.MUSIC_DISC_GIRIGIRI, 258);
+        discRegister("music_disc_ld", SpCoSounds.MUSIC_DISC_LD, 261);
+        discRegister("music_disc_sb", SpCoSounds.MUSIC_DISC_SB, 220);
+        discRegister("music_disc_sleepwalking", SpCoSounds.MUSIC_DISC_SLEEPWALKING, 218);
+        discRegister("music_disc_thesetup", SpCoSounds.MUSIC_DISC_THESETUP, 243);
+        discRegister("music_disc_wjbbb", SpCoSounds.MUSIC_DISC_WJBBB, 154);
+        discRegister("music_disc_wdf1op", SpCoSounds.MUSIC_DISC_WDF1OP, 222);
+        discRegister("music_disc_wdf2op", SpCoSounds.MUSIC_DISC_WDF2OP, 243);
     }
 
-    public static void discRegister(String ID, SoundEvent soundEvent) {
-        Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, ID), new CustomMusicDiscItem(13, soundEvent, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1)));
+    public static void discRegister(String ID, SoundEvent soundEvent, int soundLength) {
+        Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, ID), new CustomMusicDiscItem(13, soundEvent, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1), soundLength));
     }
 
 

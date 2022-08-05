@@ -35,7 +35,7 @@ public class SpCo implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("SMF");
     public static final String MOD_VERSION = "1.3";
     public static final String MOD_NAME = "SMF";
-    public static final String MINECRAFT_VERSION = "Minecraft 1.19";
+    public static final String MINECRAFT_VERSION = "Minecraft 1.19.1";
     public static final String MOD_PATH_NAME = "smf";
 
 
@@ -49,7 +49,7 @@ public class SpCo implements ModInitializer {
         SpCoSounds.register();
         SpCoItems.register();
         SpCoBlocks.registry();
-
+        //SpCoRegistries.register();
         SpCoEnchantments.register();
         ServerLifecycleEvents.SERVER_STARTED.register(minecraftServer -> {
             BlockProcessor.rebuild();
@@ -69,6 +69,7 @@ public class SpCo implements ModInitializer {
         SpCoRecipes.register();
         SpCoScreensHandlers.register();
         SpCoParticles.register();
+
 
         LOGGER.info("Done!");
     }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AWA",
+    "SDS",
+    "AWA"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:lapis_block"
+    },
+    "A": {
+      "item": "smf:basic_elements"
+    },
+    "S": {
+      "item": "smf:advanced_elements"
+    },
+    "D": {
+      "item": "minecraft:golden_chestplate"
+    }
+  },
+  "result": {
+    "item": "smf:shield_batt",
+    "count": 1
+  }
+}
