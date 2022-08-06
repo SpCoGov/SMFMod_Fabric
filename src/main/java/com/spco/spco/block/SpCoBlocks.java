@@ -5,6 +5,9 @@ import com.spco.spco.block.crop.ShengshengMeatCrop;
 import com.spco.spco.block.custom.CustomFluidBlock;
 import com.spco.spco.block.custom.CustomSaplingBlock;
 import com.spco.spco.block.entity.SpCoSignTypes;
+import com.spco.spco.block.machine.ItemInjectorBlock;
+import com.spco.spco.block.machine.MachineFrameBlock;
+import com.spco.spco.block.machine.MachinePulverizerBlock;
 import com.spco.spco.fluid.SpCoFluids;
 import com.spco.spco.sound.SpCoBlockSoundGroups;
 import com.spco.spco.world.feature.tree.JacarandaSaplingGenerator;
@@ -48,7 +51,7 @@ public class SpCoBlocks {
     public static final Block TIN_ORE = registryBlock("tin_ore", new OreBlock(AbstractBlock.Settings.of(Material.STONE).requiresTool().strength(3.0F, 3.0F), UniformIntProvider.create(3, 7)), SMF_GROUP);
     public static final Block DEEPSLATE_TIN_ORE = registryBlock("deepslate_tin_ore", new OreBlock(AbstractBlock.Settings.copy(TIN_ORE).mapColor(MapColor.DEEPSLATE_GRAY).strength(4.5F, 3.0F).sounds(BlockSoundGroup.DEEPSLATE), UniformIntProvider.create(3, 7)), SMF_GROUP);
     public static final Block TIN_BLOCK = registryBlock("tin_block", new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)), SMF_GROUP);
-    public static final Block MACHINE_PULVERIZER = registryBlock("machine_pulverizer", new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)), SMF_GROUP_DEVELOPMENT);
+    public static final Block MACHINE_PULVERIZER = registryBlock("machine_pulverizer", new MachinePulverizerBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3.5F)), SMF_GROUP);
     public static final Block EUCALYPTUS_WALL_SIGN = registryBlockWithoutItem("eucalyptus_wall_sign", new WallSignBlock(FabricBlockSettings.copy(Blocks.OAK_WALL_SIGN), SpCoSignTypes.EUCALYPTUS));
     public static final Block EUCALYPTUS_SIGN = registryBlockWithoutItem("eucalyptus_sign", new SignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), SpCoSignTypes.EUCALYPTUS));
     public static final Block FFFFFF_BLOCK = registryBlock("ffffff_block", new Block(FabricBlockSettings.copy(Blocks.BEDROCK)), SMF_GROUP_DEVELOPMENT);
@@ -63,7 +66,6 @@ public class SpCoBlocks {
         Registry.register(Registry.BLOCK, new Identifier(SpCo.MOD_PATH_NAME, "red_lamp"), RED_LAMP_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "red_lamp"), RED_LAMP_BLOCK_ITEM);
         Registry.register(Registry.BLOCK, new Identifier(SpCo.MOD_PATH_NAME, "shengsheng_meat"), SHENGSHENG_MEAT_CROP);
-
         Registry.register(Registry.BLOCK, new Identifier(SpCo.MOD_PATH_NAME, "eucalyptus_log"), EUCALYPTUS_LOG);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "eucalyptus_log"), EUCALYPTUS_LOG_ITEM);
         Registry.register(Registry.BLOCK, new Identifier(SpCo.MOD_PATH_NAME, "eucalyptus_wood"), EUCALYPTUS_WOOD);

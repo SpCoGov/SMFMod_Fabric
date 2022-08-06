@@ -28,27 +28,20 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class SpCoItems {
-
     public static final ItemGroup SMF_GROUP = FabricItemGroupBuilder.build(new Identifier(SpCo.MOD_PATH_NAME, "smf_group"), () -> new ItemStack(SpCoItems.WENTAO_DICK));
     public static final ItemGroup SMF_GROUP_MUSIC = FabricItemGroupBuilder.build(new Identifier(SpCo.MOD_PATH_NAME, "smf_group_music"), () -> new ItemStack(SpCoItems.MP3_PLAYER));
     public static final ItemGroup SMF_GROUP_DEVELOPMENT = FabricItemGroupBuilder.build(new Identifier(SpCo.MOD_PATH_NAME, "smf_group_development"), () -> new ItemStack(SpCoItems.OSU));
     public static final Item WENTAO_DICK = new WentaoDickItem(new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
-
     public static final Item ENCRYPTED_WENTAO_DICK = new EncryptedWentaoDickItem(new Item.Settings().group(SMF_GROUP));
-
     public static final Item SHENGSHENG_MEAT = new ShengshengMeatItem(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).meat().build()));
     public static final Item COOKED_SHENGSHENG_MEAT = new Item(new Item.Settings().group(SMF_GROUP).food(new FoodComponent.Builder().hunger(16).saturationModifier(1.8f).meat().build()));
-
     public static final ToolItem ENCRYPTED_WENTAO_DICK_SHOVEL = new ShovelItem(EncryptedWentaoToolMaterial.INSTANCE, -1.5F, -2.0F, new Item.Settings().group(SMF_GROUP));
     public static final ToolItem ENCRYPTED_WENTAO_DICK_PICKAXE = new CustomPickaxeItem(EncryptedWentaoToolMaterial.INSTANCE, -1, -1.4F, new Item.Settings().group(SMF_GROUP));
-
     public static final ToolItem WENTAO_DICK_PICKAXE = new CustomPickaxeItem(WentaoToolMaterial.INSTANCE, -1, -3.0F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
     public static final ToolItem WENTAO_DICK_SHOVEL = new ShovelItem(WentaoToolMaterial.INSTANCE, -1.5F, -2.8F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
     public static final ToolItem WENTAO_DICK_AXE = new CustomAxeItem(WentaoToolMaterial.INSTANCE, 3, -3.0F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
     public static final ToolItem WENTAO_DICK_SWORD = new WentaoDickSwordItem(WentaoToolMaterial.INSTANCE, 2, -2.4F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
-
     public static final ToolItem WENTAO_DICK_HOE = new CustomHoeItem(WentaoToolMaterial.INSTANCE, -2, 0.0F, new Item.Settings().group(SMF_GROUP).rarity(Rarity.EPIC));
-
     public static final MusicDiscItem DISC_THAT_GIRL = new CustomMusicDiscItem(11, SpCoSounds.MUSIC_DISC_THATGIRL, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 175);
     public static final MusicDiscItem DISC_SMF_ANTHEM = new CustomMusicDiscItem(4, SpCoSounds.MUSIC_DISC_SMF_ANTHEM, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 252);
     public static final MusicDiscItem DISC_DANGO = new CustomMusicDiscItem(5, SpCoSounds.MUSIC_DISC_DANGO, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1).rarity(Rarity.EPIC), 273);
@@ -89,10 +82,8 @@ public class SpCoItems {
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "mp3_player"), MP3_PLAYER);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_dick"), WENTAO_DICK);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "encrypted_wentao_dick"), ENCRYPTED_WENTAO_DICK);
-
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "shengsheng_meat"), SHENGSHENG_MEAT);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "cooked_shengsheng_meat"), COOKED_SHENGSHENG_MEAT);
-
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "encrypted_wentao_dick_pickaxe"), ENCRYPTED_WENTAO_DICK_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "encrypted_wentao_dick_shovel"), ENCRYPTED_WENTAO_DICK_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_dick_sword"), WENTAO_DICK_SWORD);
@@ -100,14 +91,10 @@ public class SpCoItems {
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_dick_axe"), WENTAO_DICK_AXE);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_dick_shovel"), WENTAO_DICK_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "wentao_dick_hoe"), WENTAO_DICK_HOE);
-
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "music_disc_thatgirl"), DISC_THAT_GIRL);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "music_disc_smf_anthem"), DISC_SMF_ANTHEM);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "music_disc_dango"), DISC_DANGO);
-
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "dust_pyrotheum"), DUST_PYROTHEUM);
-        FuelRegistry.INSTANCE.add(DUST_PYROTHEUM, 24000);
-
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "basic_elements"), BASIC_ELEMENTS);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "redstone_elements"), REDSTONE_ELEMENTS);
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, "advanced_elements"), ADVANCED_ELEMENTS);
@@ -143,10 +130,15 @@ public class SpCoItems {
         discRegister("music_disc_wjbbb", SpCoSounds.MUSIC_DISC_WJBBB, 154);
         discRegister("music_disc_wdf1op", SpCoSounds.MUSIC_DISC_WDF1OP, 222);
         discRegister("music_disc_wdf2op", SpCoSounds.MUSIC_DISC_WDF2OP, 243);
+        fuelRegister();
     }
 
     public static void discRegister(String ID, SoundEvent soundEvent, int soundLength) {
         Registry.register(Registry.ITEM, new Identifier(SpCo.MOD_PATH_NAME, ID), new CustomMusicDiscItem(13, soundEvent, new Item.Settings().group(SMF_GROUP_MUSIC).maxCount(1), soundLength));
+    }
+
+    private static void fuelRegister() {
+        FuelRegistry.INSTANCE.add(DUST_PYROTHEUM, 24000);
     }
 
 

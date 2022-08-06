@@ -95,16 +95,14 @@
   "itemGroup.smf.smf_group": "§d海绵山",
   "itemGroup.smf.smf_group_music": "§e海绵山 | 佛乐队",
   "itemGroup.smf.smf_group_development": "§9海绵山 | §l开发中",
-
   "enchantment.smf.masturbation": "大冲特冲",
   "enchantment.smf.vampiric": "死而无憾",
   "enchantment.smf.freezing": "适可而止罢",
   "enchantment.smf.fall_in_death": "下集摔死",
   "enchantment.smf.sun_of_smf": "我们笙笙帝国的太阳",
   "enchantment.smf.veinmining": "连锁挖掘",
-
   "effect.smf.freeze": "冻结",
-
   "key.smf.category": "海绵山",
-  "key.smf.activate.desc": "连锁挖掘"
+  "key.smf.activate.desc": "连锁挖掘",
+  "entity.minecraft.villager.wentaomaster": "穷蛆文涛"
 }

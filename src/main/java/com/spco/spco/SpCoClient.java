@@ -7,6 +7,7 @@ import com.spco.spco.fluid.SpCoFluids;
 import com.spco.spco.particle.RiotParticle;
 import com.spco.spco.particle.SpCoParticles;
 import com.spco.spco.screens.ItemInjectorScreen;
+import com.spco.spco.screens.MachinePulverizerScreen;
 import com.spco.spco.screens.SpCoScreensHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -31,6 +32,8 @@ public class SpCoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(SpCoBlocks.MACHINE_FRAME, RenderLayer.getCutout());
 
         ScreenRegistry.register(SpCoScreensHandlers.ITEM_INJECTOR_SCREEN_HANDLER, ItemInjectorScreen::new);
+        ScreenRegistry.register(SpCoScreensHandlers.MACHINE_PULVERIZER_SCREEN_HANDLER, MachinePulverizerScreen::new);
+
         ParticleFactoryRegistry.getInstance().register(SpCoParticles.RIOT, RiotParticle.Factory::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(SpCoFluids.QIANDAOWATER_STILL, new SimpleFluidRenderHandler(SimpleFluidRenderHandler.WATER_STILL, SimpleFluidRenderHandler.WATER_FLOWING, SimpleFluidRenderHandler.WATER_OVERLAY, 0x46adff));

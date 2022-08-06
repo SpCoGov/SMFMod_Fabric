@@ -1,0 +1,11 @@
+{
+  "type": "smf:machine_pulverizer",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_block"
+    }
+  ],
+  "output": {
+    "item": "minecraft:redstone"
+  }
+}

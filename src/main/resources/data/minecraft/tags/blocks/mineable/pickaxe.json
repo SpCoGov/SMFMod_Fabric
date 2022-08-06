@@ -6,6 +6,7 @@
     "smf:tin_ore",
     "smf:tin_block",
     "smf:dmy_block",
-    "smf:raw_tin_block"
+    "smf:raw_tin_block",
+    "smf:machine_pulverizer"
   ]
 }

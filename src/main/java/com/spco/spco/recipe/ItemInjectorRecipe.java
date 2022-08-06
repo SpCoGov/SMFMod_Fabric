@@ -76,7 +76,6 @@ public class ItemInjectorRecipe implements Recipe<SimpleInventory> {
     public static class Serializer implements RecipeSerializer<ItemInjectorRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final String ID = "item_injector";
-        // this is the name given in the json file
 
         @Override
         public ItemInjectorRecipe read(Identifier id, JsonObject json) {

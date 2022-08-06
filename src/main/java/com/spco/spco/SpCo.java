@@ -17,6 +17,7 @@ import com.spco.spco.recipe.SpCoRecipes;
 import com.spco.spco.screens.SpCoScreensHandlers;
 import com.spco.spco.sound.SpCoSounds;
 import com.spco.spco.util.SpCoTrades;
+import com.spco.spco.villager.SpCoVillagers;
 import com.spco.spco.world.feature.SpCoConfiguredFeatures;
 import com.spco.spco.world.gen.SpCoWorldGen;
 import net.fabricmc.api.ModInitializer;
@@ -58,6 +59,8 @@ public class SpCo implements ModInitializer {
         ServerTickEvents.END_WORLD_TICK.register((world) -> VeinMiningPlayers.validate(world.getTime()));
         ServerPlayNetworking.registerGlobalReceiver(VeinMiningNetwork.SEND_STATE, VeinMiningNetwork::handleState);
 
+        SpCoVillagers.register();
+        SpCoVillagers.registerTrades();
         SpCoCommands.register();
         SpCoEvents.register();
         SpCoFlammableBlocks.register();
